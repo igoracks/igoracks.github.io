@@ -1,37 +1,91 @@
-const wave = document.getElementById("wave");
+const mouseGlow =
+  document.getElementById("mouseGlow");
 
-if (wave) {
-  const bars = 74;
+const megaTitle =
+  document.getElementById("megaTitle");
 
-  for (let i = 0; i < bars; i++) {
-    const bar = document.createElement("span");
 
-    const distance =
-      Math.abs(i - bars / 2) /
-      (bars / 2);
+/* MOUSE LIGHT */
 
-    const peak =
-      14 +
-      (1 - distance) * 42 +
-      ((i * 19) % 19);
+window.addEventListener(
+  "pointermove",
+  (event) => {
 
-    bar.style.setProperty(
-      "--height",
-      `${Math.round(peak)}px`
-    );
+    if (mouseGlow) {
 
-    bar.style.setProperty(
-      "--speed",
-      `${0.5 + ((i * 11) % 60) / 100}s`
-    );
+      mouseGlow.style.left =
+        `${event.clientX}px`;
 
-    bar.style.setProperty(
-      "--delay",
-      `${-((i * 9) % 90) / 100}s`
-    );
+      mouseGlow.style.top =
+        `${event.clientY}px`;
 
-    wave.appendChild(bar);
+    }
+
   }
+);
+
+
+/* TRUE 3D TITLE MOVEMENT */
+
+if (megaTitle) {
+
+  megaTitle.addEventListener(
+    "pointermove",
+    (event) => {
+
+      const rect =
+        megaTitle.getBoundingClientRect();
+
+      const x =
+        (
+          event.clientX -
+          rect.left
+        ) /
+        rect.width;
+
+      const y =
+        (
+          event.clientY -
+          rect.top
+        ) /
+        rect.height;
+
+      const rotateY =
+        (x - 0.5) * 10;
+
+      const rotateX =
+        (0.5 - y) * 8;
+
+
+      megaTitle.style.transform =
+        `
+        perspective(800px)
+        rotateX(${rotateX}deg)
+        rotateY(${rotateY}deg)
+        translateZ(45px)
+        scale(1.025)
+        `;
+
+    }
+  );
+
+
+  megaTitle.addEventListener(
+    "pointerleave",
+    () => {
+
+      megaTitle.style.transform =
+        `
+        perspective(800px)
+        rotateX(0deg)
+        rotateY(0deg)
+        translateZ(0)
+        scale(1)
+        `;
+
+    }
+  );
+
 }
 
 
@@ -41,50 +95,29 @@ const year =
   document.getElementById("year");
 
 if (year) {
+
   year.textContent =
     new Date().getFullYear();
+
 }
 
 
-/* CURSOR LIGHT */
+/* SCROLL REVEALS */
 
-const cursorLight =
-  document.getElementById("cursorLight");
-
-window.addEventListener(
-  "pointermove",
-  (event) => {
-
-    if (!cursorLight) {
-      return;
-    }
-
-    cursorLight.style.left =
-      `${event.clientX}px`;
-
-    cursorLight.style.top =
-      `${event.clientY}px`;
-
-  }
-);
-
-
-/* SCROLL REVEAL */
-
-const revealTargets =
+const revealElements =
   document.querySelectorAll(
     `
-    .release-row,
-    .manifesto-main,
-    .news-card,
-    .bio-copy,
+    .release,
+    .statement-main,
+    .news-row,
+    .bio-grid,
     .contact
     `
   );
 
 
-revealTargets.forEach(
-  (element) => {
+revealElements.forEach(
+  element => {
 
     element.classList.add(
       "reveal"
@@ -97,10 +130,10 @@ revealTargets.forEach(
 const observer =
   new IntersectionObserver(
 
-    (entries) => {
+    entries => {
 
       entries.forEach(
-        (entry) => {
+        entry => {
 
           if (
             entry.isIntersecting
@@ -118,14 +151,14 @@ const observer =
     },
 
     {
-      threshold: 0.12
+      threshold: 0.1
     }
 
   );
 
 
-revealTargets.forEach(
-  (element) => {
+revealElements.forEach(
+  element => {
 
     observer.observe(
       element
