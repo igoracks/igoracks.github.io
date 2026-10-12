@@ -1,231 +1,772 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#181818">
-<title>IgoRacks — Official</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#191919">
+  <meta name="description" content="IgoRacks — Hip-Hop Artist / Producer / Mix Engineer">
+
+  <title>IgoRacks — Official</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-<div class="noise"></div>
-
-<header class="topbar">
-  <a class="logo" href="#top">IgoRacks</a>
-
-  <nav>
-    <a href="#music">Music</a>
-    <a href="#news">News</a>
-    <a href="#bio">Bio</a>
-    <a href="https://igoracksbeats.github.io" target="_blank">Beats ↗</a>
-  </nav>
-</header>
-
-<main id="top">
-
-<section class="hero">
-
-  <div class="hero-copy">
-    <div class="label">RAPPER · PRODUCER · MIX ENGINEER</div>
-
-    <h1>IGORACKS</span></h1>
-
-    <p>
-      Hip-Hop Artist / Producer / Mix Engineer
-    </p>
-
-    <div class="buttons">
-      <a class="button light" href="#music">Listen</a>
-      <a class="button" href="https://igoracksbeats.github.io" target="_blank">Beat Store</a>
-    </div>
-
-    <div class="socials">
-      <a href="https://open.spotify.com/artist/74ZzK035XeXN4eh4vNsLd8" target="_blank"><i class="fab fa-spotify"></i></a>
-      <a href="https://www.youtube.com/@igoracks" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://instagram.com/igoracksog" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://t.me/igoracks" target="_blank"><i class="fab fa-telegram"></i></a>
-    </div>
-  </div>
-
-  <div class="hero-art">
-    <div class="record">
-      <div class="record-ring one"></div>
-      <div class="record-ring two"></div>
-      <div class="record-ring three"></div>
-      <div class="record-center">IR</div>
-    </div>
-
-    <div id="wave" class="wave"></div>
-    <span class="signal">SIGNAL / 001</span>
-  </div>
-
-</section>
+  <div class="grain"></div>
+  <div class="cursor-light" id="cursorLight"></div>
 
 
-<section class="section" id="music">
+  <header class="nav">
 
-  <div class="section-head">
-    <div>
-      <div class="label">DISCOGRAPHY</div>
-      <h2>Selected releases</h2>
-    </div>
-
-    <a class="small-link"
-       href="https://open.spotify.com/artist/74ZzK035XeXN4eh4vNsLd8"
-       target="_blank">
-       Spotify ↗
+    <a class="wordmark" href="#top">
+      IGORACKS
     </a>
-  </div>
 
-  <div class="releases">
+    <div class="nav-right">
 
-    <article class="release">
-      <div class="cover grower">
-        <small>ALBUM</small>
-        <strong>GROWER</strong>
-        <span>2025</span>
+      <a href="#music">
+        MUSIC
+      </a>
+
+      <a href="#news">
+        NEWS
+      </a>
+
+      <a href="#bio">
+        BIO
+      </a>
+
+      <a
+        href="https://igoracksbeats.github.io"
+        target="_blank"
+        rel="noopener"
+      >
+        BEATS ↗
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <main id="top">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="hero-kicker">
+
+        <span>HIP-HOP ARTIST</span>
+        <span>/</span>
+        <span>PRODUCER</span>
+        <span>/</span>
+        <span>MIX ENGINEER</span>
+
       </div>
-      <h3>GROWER</h3>
-      <p>Album · 2025</p>
-    </article>
 
-    <article class="release">
-      <div class="cover lake">
-        <small>SINGLE</small>
-        <strong>ОЗЕРО<br>РИФМ</strong>
-        <span>2025</span>
+
+      <div class="hero-title-wrap">
+
+        <h1 class="hero-title">
+
+          <span class="outline">
+            IGO
+          </span>
+
+          <span>
+            RACKS
+          </span>
+
+        </h1>
+
+
+        <div class="hero-index">
+
+          <span>
+            OFFICIAL SITE
+          </span>
+
+          <span>
+            2026
+          </span>
+
+        </div>
+
       </div>
-      <h3>Озеро рифм</h3>
-      <p>Single · 2025</p>
-    </article>
 
-    <article class="release">
-      <div class="cover hype">
-        <small>SINGLE</small>
-        <strong>ХАЙПИТЬ</strong>
-        <span>2024</span>
+
+      <div class="hero-bottom">
+
+
+        <div class="hero-statement">
+
+          <div>
+
+            <p>
+              Hip-Hop Artist / Producer / Mix Engineer
+            </p>
+
+            <div class="hero-actions">
+
+              <a
+                class="pill pill-light"
+                href="#music"
+              >
+                LISTEN
+              </a>
+
+              <a
+                class="pill"
+                href="https://igoracksbeats.github.io"
+                target="_blank"
+                rel="noopener"
+              >
+                BEAT STORE ↗
+              </a>
+
+            </div>
+
+
+            <div class="socials">
+
+              <a
+                href="https://open.spotify.com/artist/74ZzK035XeXN4eh4vNsLd8"
+                target="_blank"
+                rel="noopener"
+                aria-label="Spotify"
+              >
+                <i class="fa-brands fa-spotify"></i>
+              </a>
+
+              <a
+                href="https://www.youtube.com/@igoracks"
+                target="_blank"
+                rel="noopener"
+                aria-label="YouTube"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+
+              <a
+                href="https://instagram.com/igoracksog"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+
+              <a
+                href="https://t.me/igoracks"
+                target="_blank"
+                rel="noopener"
+                aria-label="Telegram"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="signal-card">
+
+          <div class="signal-top">
+
+            <span>
+              LIVE SIGNAL
+            </span>
+
+            <span class="signal-dot"></span>
+
+          </div>
+
+
+          <div class="signal-core">
+
+            <div class="vinyl">
+
+              <div class="vinyl-ring r1"></div>
+              <div class="vinyl-ring r2"></div>
+              <div class="vinyl-ring r3"></div>
+
+              <div class="vinyl-center">
+                IR
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div
+            id="wave"
+            class="wave"
+          ></div>
+
+
+          <div class="signal-bottom">
+
+            <span>
+              NO PRESET
+            </span>
+
+            <span>
+              NO LABEL
+            </span>
+
+            <span>
+              NO PERMISSION
+            </span>
+
+          </div>
+
+        </div>
+
       </div>
-      <h3>Хайпить</h3>
-      <p>Single · 2024</p>
-    </article>
 
-    <article class="release">
-      <div class="cover bingo">
-        <small>SINGLE</small>
-        <strong>БИНГО</strong>
-        <span>2022</span>
+    </section>
+
+
+
+    <!-- TICKER -->
+
+    <section class="ticker">
+
+      <div class="ticker-track">
+
+        <span>IGORACKS</span>
+        <i>✦</i>
+
+        <span>RAP</span>
+        <i>✦</i>
+
+        <span>PRODUCTION</span>
+        <i>✦</i>
+
+        <span>MIXING</span>
+        <i>✦</i>
+
+        <span>TRAP</span>
+        <i>✦</i>
+
+        <span>INDEPENDENT</span>
+        <i>✦</i>
+
+        <span>IGORACKS</span>
+        <i>✦</i>
+
+        <span>RAP</span>
+        <i>✦</i>
+
+        <span>PRODUCTION</span>
+        <i>✦</i>
+
+        <span>MIXING</span>
+        <i>✦</i>
+
+        <span>TRAP</span>
+        <i>✦</i>
+
+        <span>INDEPENDENT</span>
+        <i>✦</i>
+
       </div>
-      <h3>Бинго</h3>
-      <p>Single · 2022</p>
-    </article>
 
-  </div>
-</section>
+    </section>
 
 
-<section class="section" id="news">
 
-  <div class="section-head">
+    <!-- MUSIC -->
+
+    <section
+      class="section music"
+      id="music"
+    >
+
+      <div class="section-meta">
+
+        <span>
+          01
+        </span>
+
+        <span>
+          DISCOGRAPHY
+        </span>
+
+        <span>
+          SELECTED RELEASES
+        </span>
+
+      </div>
+
+
+      <div class="release-list">
+
+
+        <a
+          class="release-row"
+          href="https://open.spotify.com/artist/74ZzK035XeXN4eh4vNsLd8"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="release-no">
+            01
+          </div>
+
+          <div class="release-title">
+            GROWER
+          </div>
+
+          <div class="release-type">
+            ALBUM / 2025
+          </div>
+
+          <div class="release-arrow">
+            ↗
+          </div>
+
+        </a>
+
+
+        <a
+          class="release-row"
+          href="https://open.spotify.com/artist/74ZzK035XeXN4eh4vNsLd8"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="release-no">
+            02
+          </div>
+
+          <div class="release-title">
+            ОЗЕРО РИФМ
+          </div>
+
+          <div class="release-type">
+            SINGLE / 2025
+          </div>
+
+          <div class="release-arrow">
+            ↗
+          </div>
+
+        </a>
+
+
+        <a
+          class="release-row"
+          href="https://open.spotify.com/artist/74ZzK035XeXN4eh4vNsLd8"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="release-no">
+            03
+          </div>
+
+          <div class="release-title">
+            ХАЙПИТЬ
+          </div>
+
+          <div class="release-type">
+            SINGLE / 2024
+          </div>
+
+          <div class="release-arrow">
+            ↗
+          </div>
+
+        </a>
+
+
+        <a
+          class="release-row"
+          href="https://open.spotify.com/artist/74ZzK035XeXN4eh4vNsLd8"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <div class="release-no">
+            04
+          </div>
+
+          <div class="release-title">
+            БИНГО
+          </div>
+
+          <div class="release-type">
+            SINGLE / 2022
+          </div>
+
+          <div class="release-arrow">
+            ↗
+          </div>
+
+        </a>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- MANIFESTO -->
+
+    <section class="manifesto">
+
+
+      <div class="manifesto-left">
+
+        <span>
+          NO TEMPLATE
+        </span>
+
+        <span>
+          NO CLEAN BRANDING
+        </span>
+
+        <span>
+          NO FAKE POLISH
+        </span>
+
+      </div>
+
+
+      <div class="manifesto-main">
+
+        <p>
+          I MAKE THE MUSIC,<br>
+          BUILD THE SOUND,<br>
+          MIX THE RECORDS,<br>
+          <span>AND KEEP THE NOISE.</span>
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- NEWS -->
+
+    <section
+      class="section news"
+      id="news"
+    >
+
+      <div class="section-meta">
+
+        <span>
+          02
+        </span>
+
+        <span>
+          NEWS
+        </span>
+
+        <span>
+          NOW / NEXT
+        </span>
+
+      </div>
+
+
+      <div class="news-grid">
+
+
+        <article class="news-card feature">
+
+          <div class="news-label">
+            IN PROGRESS
+          </div>
+
+          <h3>
+            RACKSTAPE<br>
+            VOL. 1:<br>
+            GROWER
+          </h3>
+
+          <p>
+            New trap project in progress.
+            Recording, mixing, final production and visuals.
+          </p>
+
+          <div class="news-footer">
+
+            <span>
+              2026
+            </span>
+
+            <span>
+              ALBUM
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-label">
+            VISUALS
+          </div>
+
+          <h3>
+            STUDIO<br>
+            DIARY
+          </h3>
+
+          <p>
+            Studio process, production experiments,
+            sound design and life around the music.
+          </p>
+
+          <div class="news-footer">
+
+            <span>
+              2026
+            </span>
+
+            <span>
+              VIDEO
+            </span>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-label">
+            BEATS
+          </div>
+
+          <h3>
+            IGORACKS<br>
+            BEATS
+          </h3>
+
+          <p>
+            Separate beat catalog and production site.
+          </p>
+
+          <div class="news-footer">
+
+            <span>
+              ONLINE
+            </span>
+
+            <a
+              href="https://igoracksbeats.github.io"
+              target="_blank"
+              rel="noopener"
+            >
+              OPEN ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- BIO -->
+
+    <section
+      class="section bio"
+      id="bio"
+    >
+
+      <div class="section-meta">
+
+        <span>
+          03
+        </span>
+
+        <span>
+          BIO
+        </span>
+
+        <span>
+          2007 — ∞
+        </span>
+
+      </div>
+
+
+      <div class="bio-layout">
+
+
+        <div class="bio-punch">
+
+          <div class="bio-year">
+            2007
+          </div>
+
+          <div class="bio-line"></div>
+
+          <div class="bio-year">
+            ∞
+          </div>
+
+        </div>
+
+
+        <div class="bio-copy">
+
+          <h2>
+            INDEPENDENT<br>
+            BY DESIGN.
+          </h2>
+
+
+          <p class="bio-lead">
+            IgoRacks is a hip-hop artist, producer and mix engineer
+            working across dark trap, minimal hip-hop and experimental rap production.
+          </p>
+
+
+          <p>
+            His background runs from battle rap and independent releases
+            to producing, mixing and mastering his own music.
+          </p>
+
+
+          <p>
+            The current sound is built around hard drums,
+            sparse arrangements, deep low-end and close, direct vocals.
+          </p>
+
+
+          <div class="bio-tags">
+
+            <span>
+              RAP
+            </span>
+
+            <span>
+              TRAP
+            </span>
+
+            <span>
+              PRODUCTION
+            </span>
+
+            <span>
+              MIXING
+            </span>
+
+            <span>
+              MASTERING
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+
+      <div class="contact-copy">
+
+        <span>
+          04 / CONTACT
+        </span>
+
+        <h2>
+          NEED A BEAT<br>
+          OR A MIX?
+        </h2>
+
+      </div>
+
+
+      <div class="contact-links">
+
+        <a
+          href="https://igoracksbeats.github.io"
+          target="_blank"
+          rel="noopener"
+        >
+          BEATS ↗
+        </a>
+
+        <a
+          href="https://t.me/igoracks"
+          target="_blank"
+          rel="noopener"
+        >
+          TELEGRAM ↗
+        </a>
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer>
+
     <div>
-      <div class="label">UPDATES</div>
-      <h2>News</h2>
+      © <span id="year"></span> IGORACKS
     </div>
-  </div>
 
-  <div class="news">
-
-    <article>
-      <time>2026</time>
-      <div>
-        <h3>RACKSTAPE VOL. 1: GROWER</h3>
-        <p>New trap project in progress. Recording, mixing and final production underway.</p>
-      </div>
-      <b>01</b>
-    </article>
-
-    <article>
-      <time>2026</time>
-      <div>
-        <h3>New visual diary</h3>
-        <p>Studio process, production experiments and life around the music.</p>
-      </div>
-      <b>02</b>
-    </article>
-
-    <article>
-      <time>ONLINE</time>
-      <div>
-        <h3>IgoRacks Beats</h3>
-        <p>Beat catalog and production work live on the separate beat site.</p>
-      </div>
-      <a href="https://igoracksbeats.github.io" target="_blank">↗</a>
-    </article>
-
-  </div>
-</section>
-
-
-<section class="section bio" id="bio">
-
-  <div class="bio-year">2007—∞</div>
-
-  <div>
-    <div class="label">BIOGRAPHY</div>
-    <h2>Independent by design.</h2>
-
-    <p>
-      IgoRacks is a rapper, beatmaker and mix engineer working across dark trap,
-      minimal hip-hop and experimental rap production.
-    </p>
-
-    <p>
-      His background runs from battle rap and independent releases to producing,
-      mixing and mastering his own music.
-    </p>
-
-    <p>
-      The current sound is built around hard drums, sparse arrangements,
-      deep low-end and close, direct vocals.
-    </p>
-
-    <div class="tags">
-      <span>RAP</span>
-      <span>TRAP</span>
-      <span>PRODUCTION</span>
-      <span>MIXING</span>
-      <span>MASTERING</span>
+    <div>
+      HIP-HOP ARTIST / PRODUCER / MIX ENGINEER
     </div>
-  </div>
 
-</section>
+    <div>
+      INDEPENDENT
+    </div>
+
+  </footer>
 
 
-<section class="contact">
-  <div>
-    <div class="label">WORK / CONTACT</div>
-    <h2>Need a beat or a mix?</h2>
-  </div>
+  <script src="script.js"></script>
 
-  <div class="buttons">
-    <a class="button" href="https://igoracksbeats.github.io" target="_blank">Beats</a>
-    <a class="button light" href="https://t.me/igoracks" target="_blank">Telegram</a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <span>© <span id="year"></span> IgoRacks</span>
-  <span>Independent artist / producer</span>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
