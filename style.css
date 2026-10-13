@@ -2067,3 +2067,49 @@ footer span:last-child {
     font-size:15px;
   }
 }
+
+
+/* === EMBEDDED WIKI BIO ON HOMEPAGE === */
+
+.wiki-home{
+  padding:58px 0 72px;
+  border-bottom:1px solid var(--line);
+}
+
+.wiki-home-label{
+  margin-bottom:22px;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--line);
+  font-family:"Space Mono",monospace;
+  font-size:9px;
+  letter-spacing:.12em;
+  color:var(--red);
+}
+
+.wiki-home .wiki-layout{
+  padding-top:0;
+}
+
+.wiki-home .wiki-article h1{
+  font-size:46px;
+}
+
+.wiki-home .wiki-infobox{
+  top:14px;
+}
+
+@media(max-width:800px){
+  .wiki-home{
+    padding:46px 0 58px;
+  }
+}
+
+@media(max-width:520px){
+  .wiki-home{
+    padding:40px 0 50px;
+  }
+
+  .wiki-home .wiki-article h1{
+    font-size:36px;
+  }
+}
