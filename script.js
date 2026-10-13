@@ -107,25 +107,30 @@ if (year) {
 const revealElements =
   document.querySelectorAll(
     `
-    .release,
-    .statement-main,
-    .news-row,
-    .bio-grid,
-    .contact
+    .feed-item,
+    .music-card,
+    .wiki-article,
+    .wiki-infobox
     `
   );
 
-
 revealElements.forEach(
   element => {
-
-    element.classList.add(
-      "reveal"
-    );
-
+    element.classList.add("reveal");
   }
 );
 
+/* PROGRESS BARS */
+
+const progressBars =
+  document.querySelectorAll(".progress[data-progress]");
+
+progressBars.forEach((bar) => {
+  const value = Number(bar.dataset.progress || 0);
+  requestAnimationFrame(() => {
+    bar.style.width = `${Math.max(0, Math.min(100, value))}%`;
+  });
+});
 
 const observer =
   new IntersectionObserver(
