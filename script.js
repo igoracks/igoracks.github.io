@@ -108,9 +108,7 @@ const revealElements =
   document.querySelectorAll(
     `
     .feed-item,
-    .music-card,
-    .wiki-article,
-    .wiki-infobox
+    .music-card
     `
   );
 
