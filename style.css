@@ -1959,7 +1959,7 @@ footer span:last-child {
   display:block;
   aspect-ratio:4/5;
   object-fit:cover;
-  filter:grayscale(100%) contrast(1.05);
+  filter:none;
 }
 
 .infobox-title{
