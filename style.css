@@ -2113,3 +2113,21 @@ footer span:last-child {
     font-size:36px;
   }
 }
+
+/* Dedicated release and news pages */
+.feature-link{color:inherit;text-decoration:none;transition:color .2s}
+.feature-link:hover,.feature-link:focus-visible{color:var(--red)}
+.cover-link{display:block;width:100%;height:100%;overflow:hidden}
+.cover-link img{width:100%;height:100%;object-fit:cover}
+.release-page{width:min(960px,calc(100% - 40px));margin:0 auto;padding:35px 0 100px;position:relative;z-index:1}
+.release-top{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px;font-family:"Space Mono",monospace;font-size:11px;letter-spacing:.1em}
+.release-top a:hover{color:var(--red)}
+.release-kicker{font-family:"Space Mono",monospace;color:var(--red);font-size:12px;letter-spacing:.2em;margin-top:75px}
+.release-title{font-family:Anton,sans-serif;font-weight:400;font-size:clamp(60px,13vw,150px);line-height:.95;margin:16px 0 28px}
+.release-grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:40px;align-items:start}
+.release-text{font-family:Georgia,serif;color:#c8c8c4;font-size:18px;line-height:1.75}
+.release-art{width:100%;display:block;object-fit:cover;border:1px solid var(--line)}
+.release-note{border-top:1px solid var(--line);padding-top:20px;font-family:"Space Mono",monospace;font-size:11px;line-height:1.8;color:#969692}
+.release-video{margin-top:36px;border:1px solid var(--line);padding:25px;font-family:"Space Mono",monospace;font-size:12px;color:#8e8e8a}
+.release-back{display:inline-block;margin-top:50px;border-bottom:1px solid var(--red);padding-bottom:6px;font-family:"Space Mono",monospace}
+@media(max-width:800px){.release-grid{grid-template-columns:1fr}.release-art{max-width:440px}.release-kicker{margin-top:48px}}
