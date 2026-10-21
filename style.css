@@ -2131,3 +2131,25 @@ footer span:last-child {
 .release-video{margin-top:36px;border:1px solid var(--line);padding:25px;font-family:"Space Mono",monospace;font-size:12px;color:#8e8e8a}
 .release-back{display:inline-block;margin-top:50px;border-bottom:1px solid var(--red);padding-bottom:6px;font-family:"Space Mono",monospace}
 @media(max-width:800px){.release-grid{grid-template-columns:1fr}.release-art{max-width:440px}.release-kicker{margin-top:48px}}
+
+/* Mobile biography: prevent horizontal scrolling on iPhone */
+@media (max-width: 800px) {
+  .wiki-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .wiki-article,
+  .wiki-infobox {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .wiki-article p,
+  .wiki-article li,
+  .wiki-article a,
+  .infobox-row span,
+  .wiki-home-label {
+    overflow-wrap: anywhere;
+  }
+  .wiki-toc {
+    width: 100%;
+  }
+}
